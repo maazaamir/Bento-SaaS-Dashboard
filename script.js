@@ -79,3 +79,29 @@ document.querySelectorAll('.card').forEach(card => {
         });
     });
 });
+const navToggle = document.getElementById('navToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+const menuLinks = document.querySelectorAll('.menu-links li');
+
+let isMenuOpen = false;
+
+navToggle.addEventListener('click', () => {
+    isMenuOpen = !isMenuOpen;
+    
+    navToggle.classList.toggle('active');
+    
+    if(isMenuOpen) {
+        // Open Menu
+        gsap.to(mobileMenu, { autoAlpha: 1, duration: 0.5 });
+        gsap.from(menuLinks, { 
+            y: 30, 
+            opacity: 0, 
+            stagger: 0.1, 
+            duration: 0.4, 
+            ease: "back.out(1.7)" 
+        });
+    } else {
+        // Close Menu
+        gsap.to(mobileMenu, { autoAlpha: 0, duration: 0.3 });
+    }
+});
