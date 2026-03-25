@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDS | Bento-SaaS Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="dashboard">
+        <header class="hero">
+            <h1>Nexus<span>AI</span> Dashboard</h1>
+            <p>Premium GSAP + Chart.js Bento Kit</p>
+        </header>
+
+        <section class="bento-grid">
+            <div class="card card-l glass">
+                <div class="card-header">
+                    <h3>Total Revenue</h3>
+                    <span class="badge">+12%</span>
+                </div>
+                <h2 class="counter" data-target="32950">$0</h2>
+                <div class="chart-container">
+                    <canvas id="revenueChart"></canvas>
+                </div>
+            </div>
+
+            <div class="card card-s glass">
+                <h3>Active Users</h3>
+                <h2 class="counter" data-target="1240">0</h2>
+                <p class="subtext">Live Now</p>
+            </div>
+
+            <div class="card card-s glass">
+                <h3>Retention</h3>
+                <h2 class="counter" data-target="98">0</h2><span class="unit">%</span>
+                <p class="subtext">Top 5% Industry</p>
+            </div>
+
+            <div class="card card-m glass">
+                <h3>AI Processing Power</h3>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span>Latency</span>
+                        <p>12ms</p>
+                    </div>
+                    <div class="stat-item">
+                        <span>Uptime</span>
+                        <p>99.9%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
