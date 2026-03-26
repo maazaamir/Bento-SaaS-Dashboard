@@ -105,3 +105,14 @@ navToggle.addEventListener('click', () => {
         gsap.to(mobileMenu, { autoAlpha: 0, duration: 0.3 });
     }
 });
+
+
+
+// Cinematic Entrance for Bento Cards
+gsap.from(".bento-card", { 
+    y: 50, 
+    opacity: 0, 
+    duration: 0.10, 
+    stagger: 0.15, 
+    ease: "power4.out" 
+});
